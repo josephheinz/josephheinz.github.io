@@ -1,0 +1,107 @@
+@font-face {
+    font-family: Terminal;
+    src: url(fonts/terminal/SvBasicManual-nRPP.ttf);
+}
+@font-face {
+    font-family: Terminal;
+    src: url(fonts/terminal/SvBasicManualBold-1G3g.ttf);
+    font-weight:bold;
+}
+
+* {
+    box-sizing: border-box;
+    color:lime;
+    font-family:Terminal;
+}
+
+body, html {
+    padding:0;
+    margin:0;
+}
+
+body {
+    height:100%;
+    width:100%;
+    background:black;
+}
+
+html {
+    height:100vh;
+    width:100vw;
+    overflow-x:hidden;
+}
+
+main {
+    max-width:60rem;
+    margin:4rem auto;
+}
+
+header {
+    border: 2px dashed lime;
+    position:relative;
+    float:right;
+    margin:.5rem;
+    padding:.5rem;
+    flex-grow:2;
+}
+
+.top {
+    display:flex;
+    flex-direction: row;
+    width:60rem;
+    height:10rem;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.icon-wrap {
+    aspect-ratio: 1/1;
+    margin:.5rem;
+    border:2px dashed lime;
+    float:left;
+}
+
+.icon-wrap img {
+    height:100%;
+    width:100%;
+    animation: infinite hue-rot-360 20s;
+}
+
+@keyframes hue-rot-360 {
+    0% {
+        filter: sepia(100%) hue-rotate(0deg) brightness(80%) saturate(420%);
+    }
+    50% {
+        filter: sepia(100%) hue-rotate(360deg) brightness(80%) saturate(420%);
+    }
+    100% {
+        filter: sepia(100%) hue-rotate(0deg) brightness(80%) saturate(420%);
+    }
+}
+
+.main {
+    display:block;
+    width:60rem;
+    margin:.5rem;
+    border:2px dashed;
+}
+
+.main div {
+    padding:1rem;
+}
+
+.main a {
+    padding:1rem;
+}
+
+.blog-tag {
+    padding:.25rem;
+    border:1px dashed;
+}
+
+footer {
+    margin:2rem 0 0 0;
+    border-top:2px dashed;
+    width:100%;
+    padding:1rem;
+}

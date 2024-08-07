@@ -1,0 +1,151 @@
+@font-face {
+    font-family: Terminal;
+    src: url(fonts/terminal/SvBasicManual-nRPP.ttf);
+}
+@font-face {
+    font-family: Terminal;
+    src: url(fonts/terminal/SvBasicManualBold-1G3g.ttf);
+    font-weight:bold;
+}
+
+* {
+    box-sizing: border-box;
+    color:lime;
+    font-family:Terminal;
+}
+
+body, html {
+    padding:0;
+    margin:0;
+}
+
+body {
+    height:100%;
+    width:100%;
+    background:black;
+}
+
+html {
+    height:100vh;
+    width:100vw;
+    overflow-x:hidden;
+}
+
+main {
+    max-width:60rem;
+    margin:4rem auto;
+}
+
+header {
+    border: 2px dashed lime;
+    position:relative;
+    float:right;
+    margin:.5rem;
+    padding:.5rem;
+    flex-grow:2;
+}
+
+.top {
+    display:flex;
+    flex-direction: row;
+    width:60rem;
+    height:10rem;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.icon-wrap {
+    aspect-ratio: 1/1;
+    margin:.5rem;
+    border:2px dashed lime;
+    float:left;
+}
+
+.icon-wrap img {
+    height:100%;
+    width:100%;
+    animation: infinite hue-rot-360 20s;
+}
+
+@keyframes hue-rot-360 {
+    0% {
+        filter: sepia(100%) hue-rotate(0deg) brightness(80%) saturate(420%);
+    }
+    50% {
+        filter: sepia(100%) hue-rotate(360deg) brightness(80%) saturate(420%);
+    }
+    100% {
+        filter: sepia(100%) hue-rotate(0deg) brightness(80%) saturate(420%);
+    }
+}
+
+.main {
+    display:flex;
+    flex-direction: row;
+    width:60rem;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.main nav {
+    border:2px dashed lime;
+    margin:.5rem;
+    padding:0 1.5rem 0 0;
+}
+
+.left {
+    display:flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+}
+
+ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  
+  li {
+    padding-left: 1em;
+    text-indent: -1em;
+  }
+  
+  li a:before {
+    content: " ";
+    padding-right: 5px;
+    padding-left:5px;
+  }
+
+  li a.current:before {
+    content: ">";
+    padding-right: 5px;
+    padding-left:5px;
+  }
+  li a {
+    text-decoration: none;
+  }
+
+.blog-feed {
+    border:2px dashed lime;
+    flex-grow:2;
+    margin:.5rem;
+    padding:.5rem;
+}
+
+.stamps {
+    padding:.5rem;
+    margin:.5rem;
+    border:2px dashed lime;
+}
+
+.stamps img {
+    margin: .25rem 0;
+}
+
+.status {
+    text-align:center;
+    padding:.5rem;
+    margin:.5rem;
+    border:2px dashed;
+}
