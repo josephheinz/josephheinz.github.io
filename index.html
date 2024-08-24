@@ -1,128 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta http-equiv="cache-control" content="no-cache" />
-    <meta http-equiv="expires" content="0" />
-    <meta http-equiv="pragma" content="no-cache" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Joseph Heinz</title>
-    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="https://unpkg.com/98.css" />
+    <script src="js/fos.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="img/windows_slanted-0.png" />
   </head>
   <body>
-    <main>
-      <div class="top">
-        <div class="icon-wrap">
-          <img src="img/icon.jpeg" />
-        </div>
-        <header>
-          <h1>Joseph Heinz</h1>
-          <h3>Trans for MAGA</h3>
-        </header>
-      </div>
+    <fos-desktop class="crt">
+      <a href="blog/">
+        <fos-icon href="blog" name="Blog">
+          <img src="img/notepad-2.png" />
+        </fos-icon>
+      </a>
 
-      <div class="main">
-        <div class="left">
-          <nav>
-            <ul>
-              <li><a href="/" class="current">Home</a></li>
-              <li><a href="/about/">About</a></li>
-              <li><a href="/">Blog</a></li>
-            </ul>
-          </nav>
-          <div class="status">
-            <u>Status</u><br /><br />
-            <span>(☭ ͜ʖ ☭)</span>
-          </div>
-          <section class="stamps">
-            <img src="img/blinkies/88by31.gif" /><br />
-            <img src="img/blinkies/button_tupachq1.gif" /><br />
-            <img src="img/blinkies/css3.gif" /><br />
-            <img src="img/blinkies/cssdif.gif" /><br />
-            <img src="img/blinkies/tiredalien2.gif" /><br />
-            <img src="img/blinkies/button-doit.png" /><br />
-            <img src="img/blinkies/anarchy-now.gif" /><br />
-            <img src="img/blinkies/brolove.gif" /><br />
-            <img src="img/blinkies/dbfire88.gif" /><br />
-            <img src="img/blinkies/fblycos_adbtn.gif" />
-          </section>
-          <section class="stamps">
-            <span><u>Quick refs</u></span
-            ><br />
-            <ul>
-              <li>7'02"</li>
-            </ul>
-            <ul>
-              <li>69lbs</li>
-            </ul>
-            <ul>
-              <li>Pacific<br />Islander</li>
-            </ul>
-            <ul>
-              <li>masgirl :3</li>
-            </ul>
-            <ul>
-              <li>Pronouns:<br />ze/zir</li>
-            </ul>
-          </section>
-        </div>
-        <section class="blog-feed">
-          <h2>Latest Blog Post</h2>
-          <section id="blog-feed">
-            <article class="blog-snippet">
-              <div class="snippet-top">
-                <img
-                  src="./img/blog/icons/sad_child.jpg"
-                  alt=""
-                  class="snippet-img"
-                />
-                <h3>Brain fart</h3>
-              </div>
-              <p>
-                ...
-              </p>
-              <br />
-              <a href="blog/pages/2024/Aug/22/Brain_fart/"
-                >Full Post</a
-              >
-            </article>
-            <article class="blog-snippet">
-              <div class="snippet-top">
-                <img
-                  src="./img/blog/icons/kangaroo.jpg"
-                  alt=""
-                  class="snippet-img"
-                />
-                <h3>Olympic Breakdancing is a Joke</h3>
-              </div>
-              <p>
-                They added breakdancing to the Olympics As described by
-                wikipedia breakdancing is "a style of street...
-              </p>
-              <br />
-              <a href="blog/pages/2024/Aug/09/Olympic_Breakdancing_is_a_Joke/"
-                >Full Post</a
-              >
-            </article>
-            <article class="blog-snippet">
-              <div class="snippet-top">
-                <img
-                  src="./img/blog/icons/man_being_eaten.jpg"
-                  alt=""
-                  class="snippet-img"
-                />
-                <h3>First Blog Post UwU</h3>
-              </div>
-              <p>
-                Hello I need some content to put on my site, so here it is. I'll
-                probably write more here in the nea...
-              </p>
-              <br />
-              <a href="blog/pages/2024/Aug/06/First_Post/">Full Post</a>
-            </article>
-          </section>
-        </section>
-      </div>
-    </main>
+      <fos-icon href="about" name="About">
+        <img src="img/help_book_cool-4.png" />
+      </fos-icon>
+
+      <fos-icon href="socials" name="Socials">
+        <img src="img/accessibility-4.png" />
+      </fos-icon>
+
+      <fos-window name="about" title="About Me">
+        <h3>This isn't me</h3>
+        <img
+          src="img/avatars-001334989017-mv6xa3-t500x500.jpg"
+          height="200"
+          width="200"
+        /><br />
+        <strong>But you wouldn't know that</strong><br /><br />
+        <p style="max-width: 300px">
+          I'm just a hopeless romantic looking for a thick empowered goth mommy
+          to crush my head in her thighs. I like to write down my thoughts on my
+          <a href="/blog/">blog</a>. If you go check it out, you'll see that
+          there isn't much, which is a reflection of my tiktok brain.
+        </p>
+      </fos-window>
+
+      <fos-window name="socials" title="Socials">
+        <ul>
+          <li>
+            <a href="https://github.com/Robbit2">Github</a>
+          </li>
+          <li>
+            <a href="https://x.com/JosephHeinz26">Twitter / 𝕏</a>
+          </li>
+        </ul>
+      </fos-window>
+
+      <fos-bar>
+        <fos-menu Name="Start">
+          <div>Joseph Heinz</div>
+          <hr />
+          <fos-menu-item><a style="color: #222">Blog</a></fos-menu-item>
+          <fos-menu-item href="about">About</fos-menu-item>
+          <fos-menu-item href="socials">Socials</fos-menu-item>
+        </fos-menu>
+      </fos-bar>
+    </fos-desktop>
   </body>
 </html>
