@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Microblog | Joseph Heinz</title>
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav>
+      <h1 id="title">BIG PHARMA</h1>
+      <div>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../blog/">Blog</a></li>
+          <li><a href="../about/">About</a></li>
+          <li><a href="#">Microblog</a></li>
+        </ul>
+      </div>
+      <img
+        id="profile-pic"
+        src="../img/avatars-001334989017-mv6xa3-t500x500.jpg"
+        alt="Random Profile Picture of a dog"
+        height="75"
+        title="Dog pfp"
+      />
+    </nav>
+    <main>
+      <h1>Feed</h1>
+      <article id="feed"></article>
+      <dialog>
+        <div class="dialog-top">
+          <span>Share this post</span><a onclick="dialog.close()">x</a>
+        </div>
+        <hr />
+        <div class="dialog-main">
+          <input type="url" name="share-link" id="dialog-share-link" />
+          <button onclick="myFunction()">Copy</button>
+        </div>
+      </dialog>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>

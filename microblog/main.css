@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+nav {
+  width: calc(100% - 4rem);
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  padding: 1.5rem;
+  margin: 2rem;
+
+  font-weight: 900;
+
+  border-radius: 50px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav ul li {
+  list-style: none;
+  position: relative;
+}
+
+nav ul li:not(:last-child)::after {
+  content: "•";
+  color: #555;
+  right: -1rem;
+  position: absolute;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #555;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+nav h1 {
+  font-size: 2.5rem;
+  font-family: "Oswald", sans-serif;
+  color: #555;
+}
+
+nav img {
+  height: 4.5rem;
+  width: 4.5rem;
+
+  border-radius: 50%;
+  border: 3px solid #f1f8fd;
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.07),
+    -20px -20px 20px rgba(255, 255, 255, 0.7), 6px 6px 6px rgba(0, 0, 0, 0.09),
+    -6px -6px 6px rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+}
+
+main h1 {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 3rem;
+  font-family: "Oswald", sans-serif;
+  color: #555;
+}
+
+#feed {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 4rem;
+  min-height: 100%;
+}
+
+.post {
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  width: 33%;
+  color: #555;
+  font-weight: 600;
+}
+
+.profile-pic {
+  height: 3.5rem;
+  width: 3.5rem;
+
+  border-radius: 50%;
+  border: 3px solid #f1f8fd;
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.07),
+    -20px -20px 20px rgba(255, 255, 255, 0.7), 6px 6px 6px rgba(0, 0, 0, 0.09),
+    -6px -6px 6px rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+}
+
+.post-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+hr {
+  color: #555;
+  width: 75%;
+  margin: 1.5rem auto;
+  border-radius: 50%;
+}
+
+.post-buttons button {
+  border-radius: 2rem;
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  padding: 0.75rem;
+  cursor: pointer;
+  color: #555;
+  transition: 0.35s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+dialog {
+  z-index: 10;
+  padding:2rem;
+  margin: auto;
+  width:33%;
+  border-radius: 50px;
+  border:rgba(0,0,0,0);
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  transition: 0.35s cubic-bezier(0.075, 0.82, 0.165, 1);
+  color:#555;
+  font-weight:600;
+}
+
+.dialog-top {
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dialog-top a {
+    cursor: pointer;
+}
+
+dialog input {
+    width:100%;
+    border-radius:50px;
+    padding-left:0.5rem;
+}
+
+.dialog-main {
+    display:flex;
+    gap:1rem;
+}
+
+.dialog-main button {
+    padding:0.5rem;
+    border-radius: 50px;
+    color:white;
+    font-weight: 600;
+    background:#333;
+    cursor: pointer;
+}
+
+dialog::backdrop {
+  background-color: hsla(0, 0%, 0%, 0.5);
+}
