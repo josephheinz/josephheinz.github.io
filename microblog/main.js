@@ -5,6 +5,7 @@ const posts = [
   { time: "08:53p", date: "08/31", content: "microbloggin'", id: 1 },
   { time: "09:23p", date: "08/31", content: "damn son, where'd you find this?", id: 2 },
   { time: "09:26p", date: "08/31", content: "my website is so stupid, a windows-esque homepage, a terminal themed blog, and a clean neumorphism microblog", id: 3 },
+  { time: "6:42pm", date: "09/05", content: "man oh man, do i simply love being white 👴🏻", id: 4}
 ];
 const clamp = (input, min, max) => {
   if (input < min) {
