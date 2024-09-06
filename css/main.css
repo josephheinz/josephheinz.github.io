@@ -307,3 +307,19 @@ fos-menu::part(window) {
   z-index: 9999;
   pointer-events: none;
 }
+
+#certs {
+  width:100%;
+  height:100%;
+  display:grid;
+  gap:2rem;
+  grid-template-rows: 11rem 11rem;
+  grid-template-columns: 11rem 11rem;
+  justify-content: center;
+  align-items: center;
+}
+
+#certs>img {
+  height:10rem;
+  width:10rem;
+}
