@@ -140,6 +140,11 @@ li a {
   padding: 0.5rem;
   margin: 0.5rem;
   border: 2px dashed lime;
+  display:flex;
+  flex-direction: column;
+  gap:0.25rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .stamps img {
